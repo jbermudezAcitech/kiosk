@@ -3,25 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Split Screen</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-        }
-        .iframe-container {
-            width: 50%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <title>My Kiosk PWA</title>
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
-    <iframe class="iframe-container" src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3"></iframe>
-    <iframe class="iframe-container" src="https://app.smartpass.app"></iframe>
+    <h1>Welcome to My Kiosk PWA</h1>
+    <p>The content will be displayed in kiosk mode.</p>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(function() { console.log('Service Worker Registered'); });
+      }
+    </script>
 </body>
 </html>

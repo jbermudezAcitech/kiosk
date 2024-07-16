@@ -1,21 +1,15 @@
 {
-    "manifest_version": 3,
-    "name": "Dual Window Opener",
-    "version": "1.0",
-    "description": "Opens two Chrome windows with specified URLs.",
-    "permissions": [
-      "tabs",
-      "system.display"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "action": {
-      "default_icon": {
-        "16": "green.png",
-        "48": "green.png",
-        "128": "green.png"
-      }
+  "name": "Kiosk PWA",
+  "short_name": "Kiosk",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "green.png",
+      "sizes": "192x192",
+      "type": "image/png"
     }
-  }
-  
+  ]
+}
