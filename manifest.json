@@ -12,7 +12,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["activeTab", "runtime", "kiosk"],
+  "permissions": ["activeTab", "power"],
   "externally_connectable": {
     "matches": ["<all_urls>"]
   },
