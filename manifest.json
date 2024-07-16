@@ -9,5 +9,7 @@
       "js": ["content.js"]
     }
   ],
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab"],
+  "update_url": "https://raw.githubusercontent.com/jbermudezAcitech/kiosk/main/update.xml"
+
 }
