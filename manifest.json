@@ -9,7 +9,12 @@
       "js": ["content.js"]
     }
   ],
-  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "runtime", "kiosk"],
+  "externally_connectable": {
+    "matches": ["<all_urls>"]
+  },
   "update_url": "https://raw.githubusercontent.com/jbermudezAcitech/kiosk/main/update.xml"
-
 }
