@@ -9,7 +9,7 @@
       "js": ["content.js"]
     }
   ],
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "tabs"],
   "background": {
     "service_worker": "background.js"
   }

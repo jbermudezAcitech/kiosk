@@ -25,3 +25,13 @@ button.addEventListener('click', () => {
 
 // Append button to the body
 document.body.appendChild(button);
+
+// Function to notify background script of user activity
+function notifyActivity() {
+    chrome.runtime.sendMessage({ action: "resetInactivity" });
+}
+
+// Add event listeners for various user activities
+['click', 'mousemove', 'keydown'].forEach(event => {
+    document.addEventListener(event, notifyActivity);
+});
